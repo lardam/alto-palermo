@@ -188,6 +188,9 @@ body{
         #menu-title{
             opacity: 1;
         }
+        #nav-menu{
+            display: none;
+        }
     }
     .open-bubble{
         width: calc(100vw - 2rem);
@@ -206,7 +209,7 @@ body{
             align-items: center;
             position: absolute;
             #nav-list{
-                width: 90%;
+                width: 100%;
                 display: flex;
                 justify-content: space-evenly;
                 list-style: none;
@@ -215,6 +218,7 @@ body{
                     height: 3.5rem;
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     .nav-link{
                         height: 100%;
                         display: flex;
