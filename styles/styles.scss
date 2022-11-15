@@ -223,7 +223,7 @@ body{
             align-items: center;
             position: absolute;
             visibility: visible;
-            animation: smooth-bubble .5s forwards;
+            animation: smooth-bubble .5s forwards linear;
             #nav-list{
                 width: 100%;
                 display: flex;
