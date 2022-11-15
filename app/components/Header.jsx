@@ -11,7 +11,7 @@ export function Header(){
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.pageYOffset > 500){
-                setHeader(52)
+                setHeader(62)
                 setLogoHeight(29)
                 setLogoWidth(43)
             } 

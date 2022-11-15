@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 $white: #f2f2f2;
+$pink: #F299A9;
+$strong_pink: #D93654;
+$red_1: #D90D32;
+$red_2: #D93223;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -16,6 +23,7 @@ body{
         place-content: center;
         position: fixed;
         top: 0;
+        z-index: 1;
         transition: height 0.5s ease-in-out;
         #home-logo img{
             transition: all 0.5s ease-in-out;
@@ -23,10 +31,157 @@ body{
     }
     main{
         padding-top: 6.5rem;
-        .sec{
-            height: 450px;
+        #main-carousel{
+            height: 250px;
+            width: 100vw;
+            display: flex;
+            overflow: hidden;
+            .carousel-img-container{
+                min-width: 100%;
+                .carousel-img{
+                    height: 100%;
+                    display: grid;
+                    place-content: center;
+                    background-color: $pink;
+                    color: $white;
+                    animation: main-carousel 30s infinite;
+                }
+            }
+        }
+        #stores-link-container{
+            height: 240px;
+            padding: 75px 0;
             display: grid;
             place-content: center;
+            background-color: $red_1;
+            #stores-link{
+                #stores-back{
+                    display: none;
+                }
+                #stores-title{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: $white;
+                }
+            }
         }
+        #promo-carousel{
+            height: 350px;
+            width: 100vw;
+            display: flex;
+            overflow: hidden;
+            .pr-carousel-img-container{
+                min-width: 100%;
+                .pr-carousel-img{
+                    height: 100%;
+                    display: grid;
+                    place-content: center;
+                    background-color: $strong_pink;
+                    color: $white;
+                    animation: main-carousel 30s infinite;
+                }
+            }
+        }
+        #social-container{
+            padding: 75px 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $pink;
+            color: $white;
+            #social-title{
+                margin-bottom: 32px;
+                font-size: 1.75rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            #social-list{
+                width: 90%;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                list-style-type: none;
+                .social-item{
+                    width: 2rem;
+                    height: 2rem;
+                    display: grid;
+                    place-content: center;
+                    cursor: pointer;
+                    .social-icon{
+                        font-size: 1.8rem;
+                        transition: all 0.2s ease-in-out;
+                        &:hover{
+                            font-size: 2rem;
+                            color: $red_2;
+                        }
+                    }
+                }
+            }
+        }
+        #services-container{
+            padding: 75px 2rem 35px;
+            display: grid;
+            justify-content: space-evenly;
+            background-color: $red_2;
+            color: $white;
+            #services-title{
+                margin-bottom: 48px;
+                font-size: 1.5rem;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            #services{
+                .service{
+                    margin-bottom: 40px;
+                    .service-title-container{
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        .service-icon{
+                            margin-right: 1rem;
+                            font-size: 1.5rem;
+                        }
+                        .service-title{
+                            font-size: 1.2rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                    .service-text-container{
+                        .service-text{
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes main-carousel{
+    0%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    63%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    99%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-300%);
     }
 }
