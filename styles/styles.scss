@@ -186,11 +186,11 @@ body{
         right: 1rem;
         background-color: $pink;
         color: $red_1;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.25s ease-in-out;
         #menu-title{
             font-weight: 800;
             text-transform: uppercase;
-            transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.25s ease-in-out;
         }
     }
     .bubble{
@@ -223,7 +223,7 @@ body{
             align-items: center;
             position: absolute;
             visibility: visible;
-            animation: smooth-bubble 1s forwards;
+            animation: smooth-bubble .5s forwards;
             #nav-list{
                 width: 100%;
                 display: flex;
@@ -292,7 +292,7 @@ body{
         opacity: 0;
     }
     51%{
-        width: 25%;
+        width: 0%;
         height: 100%;
         opacity: 0;
     }
