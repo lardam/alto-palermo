@@ -1,7 +1,7 @@
 export function Social(){
     return(
         <div id="social-container">
-            <h4 id="social-title">redes sociales</h4>
+            <h3 id="social-title">redes sociales</h3>
             <ul id="social-list">
                 <li className="social-item"><i className="social-icon fa-brands fa-square-facebook"></i></li>
                 <li className="social-item"><i className="social-icon fa-brands fa-square-twitter"></i></li>

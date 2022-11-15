@@ -1,5 +1,7 @@
 export default function Stores(){
     return(
-        <h1>Tiendas</h1>
+        <main>
+            <h1>Tiendas</h1>
+        </main>
     )
 }
