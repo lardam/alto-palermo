@@ -169,6 +169,7 @@ body{
         background-color: $white;
         #stores-title{
             font-size: 2rem;
+            margin-bottom: 2rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -176,6 +177,57 @@ body{
         }
         #stores-container{
             height: 100vh;
+            #stores-grid{
+                .store{
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    background-color: $pink;
+                    color: $red_1;
+                    .top-info-container{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 1.5rem;
+                        .store-img-container{
+                            width: 8rem;
+                            height: 5rem;
+                            padding: 1rem;
+                            position: relative;
+                        }
+                        .store-info-container{
+                            width: 45%;
+                            .store-title{
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                            }
+                            .store-add-info{
+                                font-size: 0.75rem;
+                                line-height: 1rem;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                    .store-tags{
+                        width: 100%;
+                        align-self: center;
+                        .store-tag-list{
+                            display: flex;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            gap: 0.5rem;
+                            align-self: center;
+                            .store-tag{
+                                padding: 4px;
+                                border-radius: 2px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                                background-color: $strong_pink;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     #bubble-menu{
@@ -191,6 +243,7 @@ body{
             font-weight: 800;
             text-transform: uppercase;
             transition: opacity 0.25s ease-in-out;
+            cursor: pointer;
         }
     }
     .bubble{
@@ -235,6 +288,9 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    &:hover{
+                        cursor: pointer;
+                    }
                     .nav-link{
                         height: 100%;
                         display: flex;
