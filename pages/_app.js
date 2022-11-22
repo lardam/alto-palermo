@@ -1,6 +1,6 @@
 import '../styles/styles.scss'
 import Head from 'next/head'
-import { Header } from '../components/header.jsx'
+import { Header } from '../components/Header.jsx'
 import { Menu } from '../components/BubbleMenu.jsx'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
