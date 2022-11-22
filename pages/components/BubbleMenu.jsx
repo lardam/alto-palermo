@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Link from "next/link"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShop, faHashtag, faHandsHolding, faPhone, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export function Menu(){
     const [toggle, setToggle] = useState(false)
@@ -11,31 +13,31 @@ export function Menu(){
                 <ul id="nav-list">
                     <li className="nav-item">
                         <Link className="nav-link" href='/locales'>
-                            <i className="nav-icon fa-solid fa-shop" />
+                            <FontAwesomeIcon className="nav-icon" icon={faShop} />
                             <p className="nav-title">locales</p>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href='./#social-container'>
-                            <i className="nav-icon fa-solid fa-hashtag" />
+                            <FontAwesomeIcon className="nav-icon" icon={faHashtag} />
                             <p className="nav-title">redes</p>
                         </a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href='./#services-container'>
-                            <i className="nav-icon fa-solid fa-hands-holding" />
+                            <FontAwesomeIcon className="nav-icon" icon={faHandsHolding} />
                             <p className="nav-title">servicios</p>
                         </a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href='./#contact-container'>
-                            <i className="nav-icon fa-solid fa-phone" />
+                            <FontAwesomeIcon className="nav-icon" icon={faPhone} />
                             <p className="nav-title">contacto</p>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">
-                            <i id="close-bubble" onClick={() => setToggle(false)} className="nav-icon fa-solid fa-xmark" />
+                        <a className="nav-link" onClick={() => setToggle(false)}>
+                            <FontAwesomeIcon id="close-bubble" className="nav-icon" icon={faXmark} />
                             <p className="nav-title">cerrar</p>
                         </a>
                     </li>

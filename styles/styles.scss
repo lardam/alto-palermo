@@ -54,11 +54,14 @@ body{
         }
         #stores-link-container{
             height: 240px;
-            padding: 75px 0;
-            display: grid;
-            place-content: center;
+            position: relative;
             background-color: $red_1;
             #stores-link{
+                height: 100%;
+                width: 100%;
+                display: grid;
+                place-content: center;
+                position: absolute;
                 #stores-back{
                     display: none;
                 }
@@ -175,9 +178,50 @@ body{
             letter-spacing: 2px;
             color: $red_1;
         }
+        #filters-container{
+            margin-bottom: 2rem;
+            #filters-title-container{
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                #filters-title{
+                    margin-right: .6rem;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    color: $strong_pink;
+                }
+                svg{
+                    color: $strong_pink;
+                    transition: transform .5s ease;
+                }
+                .rotate-chevron{
+                    transform: rotate(180deg);
+                }
+            }
+            .filter-list{
+                height: 0;
+                margin-top: .5rem;
+                list-style: none;
+                display: grid;
+                gap: .25rem;
+                overflow: hidden;
+                transition: all .5s ease;
+                .filter-item{
+                    &::first-letter{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .open-filter-list{
+                height: 184px;
+            }
+        }
         #stores-container{
-            height: 100vh;
             #stores-grid{
+                display: grid;
+                gap: 1rem;
                 .store{
                     width: 100%;
                     padding: 1rem;
@@ -204,6 +248,7 @@ body{
                                 font-size: 0.75rem;
                                 line-height: 1rem;
                                 font-weight: 300;
+                                color: $red_1;
                             }
                         }
                     }

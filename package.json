@@ -1,5 +1,5 @@
 {
-  "name": "alto-palermo",
+  "name": "json-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "babel-plugin-macros": "^3.1.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "next": "13.0.3",
@@ -16,8 +22,6 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "node-sass": "7.0.3",
-    "nodemon": "2.0.20",
-    "sass": "1.56.1"
+    "sass": "^1.56.1"
   }
 }

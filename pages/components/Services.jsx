@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCar, faWheelchairMove, faWifi, faTrainSubway } from "@fortawesome/free-solid-svg-icons";
+
 export function Services(){
     return(
         <div id="services-container">
@@ -5,7 +8,7 @@ export function Services(){
             <div id="services">
                 <div id="parking" className="service">
                     <div id="parking-title-container" className="service-title-container">
-                        <i id="parking-icon" className="service-icon fa-solid fa-car"></i>
+                        <FontAwesomeIcon id="parking-icon" className="service-icon" icon={faCar} />
                         <h4 id="parking-title" className="service-title">Estacionamiento</h4>
                     </div>
                     <div id="parking-text-container" className="service-text-container">
@@ -20,7 +23,7 @@ export function Services(){
                 </div>
                 <div id="handicapped" className="service">
                     <div id="handicapped-title-container" className="service-title-container">
-                        <i id="handicapped-icon" className="service-icon fa-solid fa-wheelchair-move"></i>
+                        <FontAwesomeIcon id="handicapped-icon" className="service-icon" icon={faWheelchairMove} />
                         <h4 id="handicapped-title" className="service-title">Personas con movilidad reducida</h4>
                     </div>
                     <div id="handicapped-text-container" className="service-text-container">
@@ -31,7 +34,7 @@ export function Services(){
                 </div>
                 <div id="wifi" className="service">
                     <div id="wifi-title-container" className="service-title-container">
-                        <i id="wifi-icon" className="service-icon fa-solid fa-wifi"></i>
+                        <FontAwesomeIcon id="wifi-icon" className="service-icon" icon={faWifi} />
                         <h4 id="wifi-title" className="service-title">WI-FI</h4>
                     </div>
                     <div id="wifi-text-container" className="service-text-container">
@@ -46,7 +49,7 @@ export function Services(){
                 </div>
                 <div id="transport" className="service">
                     <div id="transport-title-container" className="service-title-container">
-                        <i id="transport-icon" className="service-icon fa-solid fa-train-subway"></i>
+                        <FontAwesomeIcon id="transport-icon" className="service-icon" icon={faTrainSubway} />
                         <h4 id="transport-title" className="service-title">Transporte</h4>
                     </div>
                     <div id="transport-text-container" className="service-text-container">
