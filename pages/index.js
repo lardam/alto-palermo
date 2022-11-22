@@ -1,8 +1,8 @@
 import Link from "next/link"
-import { MainCarousel } from "./components/MainCarousel"
-import { PromoCarousel } from "./components/PromoCarousel"
-import { Social } from "./components/Social"
-import { Services } from "./components/Services"
+import { MainCarousel } from "../components/MainCarousel"
+import { PromoCarousel } from "../components/PromoCarousel"
+import { Social } from "../components/Social"
+import { Services } from "../components/Services"
 
 export default function Home() {
   return (

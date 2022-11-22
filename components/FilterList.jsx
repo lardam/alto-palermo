@@ -1,4 +1,4 @@
-import { stores } from "../api/list"
+import { stores } from '../pages/api/list'
 
 export function ItemList({ filterItem, setItem }){
     const categoryList = ["accesorios", "indumentaria", "deportes", "tecnología", "formal", "casual", "gastronomía"]

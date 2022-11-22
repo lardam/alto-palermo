@@ -1,6 +1,6 @@
 import { stores } from './api/list'
-import { Card } from './components/StoreCard'
-import { ItemList } from './components/FilterList'
+import { Card } from '../components/StoreCard'
+import { ItemList } from '../components/FilterList'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
