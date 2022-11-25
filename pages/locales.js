@@ -32,7 +32,7 @@ export default function Stores(){
             </div>
             <div id="stores-container">
                 <div id="stores-grid">
-                        <Card item={item} />
+                        <Card items={item} />
                 </div>
             </div>
         </main>

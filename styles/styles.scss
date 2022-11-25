@@ -17,6 +17,7 @@ $red_2: #D93223;
 body{
     position: relative;
     scroll-behavior: smooth;
+    background-color: $white;
     header{
         width: 100vw;
         background-color: $white;
@@ -130,7 +131,7 @@ body{
             }
         }
         #services-container{
-            padding: 75px 2rem 35px;
+            padding: 75px 2rem;
             display: grid;
             justify-content: space-evenly;
             background-color: $red_2;
@@ -165,6 +166,9 @@ body{
                         }
                     }
                 }
+                #transport{
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -185,6 +189,7 @@ body{
                 margin-bottom: 1rem;
                 display: flex;
                 align-items: center;
+                cursor: pointer;
                 #filters-title{
                     margin-right: .6rem;
                     font-size: 1.2rem;
@@ -210,6 +215,7 @@ body{
                 overflow: hidden;
                 transition: all .5s ease;
                 .filter-item{
+                    cursor: pointer;
                     &::first-letter{
                         text-transform: uppercase;
                     }
@@ -222,14 +228,17 @@ body{
         #stores-container{
             #stores-grid{
                 display: grid;
+                justify-content: center;
                 gap: 1rem;
                 .store{
                     width: 100%;
+                    max-width: 300px;
                     padding: 1rem;
                     border-radius: 10px;
                     background-color: $pink;
                     color: $red_1;
                     .top-info-container{
+                        height: 92.5px;
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 1.5rem;
@@ -269,6 +278,9 @@ body{
                                 font-weight: 500;
                                 background-color: $strong_pink;
                                 color: $white;
+                                &::first-letter{
+                                    text-transform: uppercase;
+                                }
                             }
                         }
                     }
@@ -352,6 +364,143 @@ body{
                             text-align: center;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    body{
+        main{
+            #social-container{
+                padding: 75px 4rem;
+            }
+            #services-container{
+                padding: 75px 4rem;
+            }
+        }
+        #bubble-menu{
+            bottom: 2rem;
+            right: 2rem;
+        }
+        .open-bubble{
+            width: calc(100vw - 4rem);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        #main-stores{
+            padding: 8rem 4rem 75px;
+            #stores-container{
+                #stores-grid{
+                    grid-template-columns: 1fr 1fr;
+                    .store{
+                        justify-self: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        main{
+            #main-carousel{
+                height: 450px;
+            }
+            #stores-link-container{
+                #stores-link{
+                    #stores-title{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            #social-container{
+                padding: 75px 8rem;
+                #social-title{
+                    font-size: 2.2rem;
+                }
+                #social-list{
+                    .social-item{
+                        width: 4rem;
+                        height: 4rem;
+                        .social-icon{
+                            font-size: 3rem;
+                            &:hover{
+                                font-size: 3.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #services-container{
+                padding: 75px 8rem;
+                #services-title{
+                    font-size: 2rem;
+                }
+                #services{
+                    .service{
+                        margin-bottom: 75px;
+                        .service-title-container{
+                            .service-icon{
+                                font-size: 2rem;
+                            }
+                            .service-title{
+                                font-size: 1.7rem;
+                                line-height: 2rem;
+                            }
+                        }
+                        .service-text-container{
+                            .service-text{
+                                font-size: 1.2rem;
+                                line-height: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #main-stores{
+            min-height: 100vh;
+            padding: 8rem 8rem 75px;
+            #filters-container{
+                .filter-list{
+                    .filter-item{
+                        font-size: 1.2rem;
+                    }
+                }
+                .open-filter-list{
+                    height: 212px;
+                }
+            }
+        }
+        #bubble-menu{
+            right: 4rem;
+            bottom: 2rem;
+        }
+        .open-bubble{
+            width: calc(100vw - 8rem);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        main{
+            #social-container{
+                height: 350px;
+                justify-content: space-evenly;
+            }
+        }
+        #main-stores{
+            #stores-container{
+                #stores-grid{
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 2rem;
                 }
             }
         }

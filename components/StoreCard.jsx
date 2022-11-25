@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export function Card({ item }){
+export function Card({ items }){
     return(
         <>
-            {item.map(item => (
+            {items.map(item => (
                 <div className="store" key={item.id}>
                     <div className="top-info-container">
                         <div className="store-img-container">
@@ -18,7 +18,7 @@ export function Card({ item }){
                     </div>
                     <div className="store-tags">
                             <ul className="store-tag-list">
-                                {/* {store.tags.map(tag => <li className='store-tag' key={store.name + '-' + tag}>{tag}</li>)} */}
+                                {item.tags.map(tag => (<li key={tag} className="store-tag">{tag}</li>))}
                             </ul>
                     </div>
                 </div>
