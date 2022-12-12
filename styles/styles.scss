@@ -12,6 +12,12 @@ $red_2: #D93223;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
+    a{
+        color: unset;
+        &:visited{
+            color: unset;
+        }
+    }
 }
 
 body{
@@ -19,7 +25,7 @@ body{
     scroll-behavior: smooth;
     background-color: $white;
     header{
-        width: 100vw;
+        width: 100%;
         background-color: $white;
         display: flex;
         align-items: center;
@@ -39,7 +45,7 @@ body{
         padding-top: 6.5rem;
         #main-carousel{
             height: 250px;
-            width: 100vw;
+            width: 100%;
             display: flex;
             overflow: hidden;
             .carousel-img-container{
@@ -77,7 +83,7 @@ body{
         }
         #promo-carousel{
             height: 350px;
-            width: 100vw;
+            width: 100%;
             display: flex;
             overflow: hidden;
             .pr-carousel-img-container{
